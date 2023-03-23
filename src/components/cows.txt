@@ -1,0 +1,32 @@
+Sure, here's an example of how you can display the count of products from an API in ReactJS:
+
+Assuming that you have a state variable called searchTerm which stores the user's search term, and a state variable called products which stores the array of products returned from the API, you can use the filter method to get an array of products that match the search term, and then use the length property to get the count of products:
+
+import React, { useState, useEffect } from 'react';
+
+function ProductSearch() {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    // fetch products from API and update state
+    fetch('https://example.com/api/products')
+      .then(response => response.json())
+      .then(data => setProducts(data));
+  }, []);
+
+  const filteredProducts = products.filter(product =>
+    product.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  return (
+    <div>
+      <input type="text" value={searchTerm} onChange={e => setSearchTerm(e.target.value)} />
+      <p>Found {filteredProducts.length} products out of {products.length} available products.</p>
+      {/* display filtered products */}
+    </div>
+  );
+}
+
+
+In this example, the filter method is used to create a new array called filteredProducts which contains only the products whose name property includes the search term (case-insensitive). Then the count of filtered products and the count of all available products are displayed in a paragraph element.

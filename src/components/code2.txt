@@ -1,0 +1,36 @@
+Sure, I can help you modify the code to update the showingCount even when the text filter is empty. You can modify the updateFilterProducts reducer function to count the number of products that match the current filters, including the text filter. Here's an updated version of the code:
+
+
+updateFilterProducts(state,action){
+          
+  let {apidatacopy}=state;
+  let temProducts=[...apidatacopy];
+  const {text,categories,price,minPrice}=state.filters;
+  let count = 0; // Initialize count to 0
+
+  if(text){
+    temProducts=temProducts.filter(cur=>cur.name.toLowerCase().includes(text.toLowerCase())) 
+  }
+
+  if(categories!=="All"){
+    temProducts=temProducts.filter(cur=>cur.category.name===categories) 
+  }
+          
+  if(price===0){
+    temProducts=temProducts.filter(cur=>cur.price===price)
+  }else{
+    temProducts=temProducts.filter(currElem=>currElem.price<=price);
+  }
+
+  // Count the number of products that match the filters
+  count = temProducts.length;
+
+  return{
+    ...state,
+    filterProducts:temProducts,
+    showingCount: count // Update showingCount
+  }
+}
+
+
+This code initializes the count variable to 0, and then increments it every time a filter matches a product. Finally, it updates the showingCount with the count. This way, even if the text filter is empty, it will still count the products that match the other filters.

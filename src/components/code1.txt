@@ -1,0 +1,45 @@
+To update the showingCount value when the filter query is empty, you can check if the text value in the filters object is empty in the updateFilterProducts reducer. If it's empty, you can set the showingCount value to the length of the original apidatacopy array, which contains all the products. Here's how you can modify the updateFilterProducts reducer to achieve this:
+
+updateFilterProducts(state, action) {
+  let { apidatacopy } = state;
+  let temProducts = [...apidatacopy];
+  const { text, categories, price, minPrice } = state.filters;
+
+  if (text) {
+    temProducts = temProducts.filter((cur) =>
+      cur.name.toLowerCase().includes(text.toLowerCase())
+    );
+  }
+
+  if (categories !== "All") {
+    temProducts = temProducts.filter(
+      (cur) => cur.category.name === categories
+    );
+  }
+
+  if (price === 0) {
+    temProducts = temProducts.filter((cur) => cur.price === price);
+  } else {
+    temProducts = temProducts.filter(
+      (currElem) => currElem.price <= price
+    );
+  }
+
+  // Update showingCount based on filtered products
+  const showingCount = temProducts.length;
+
+  // If filter query is empty, set showingCount to the length of the original apidatacopy array
+  if (!text) {
+    state.showingCount = apidatacopy.length;
+  } else {
+    state.showingCount = showingCount;
+  }
+
+  return {
+    ...state,
+    filterProducts: temProducts,
+  };
+},
+
+
+In this code, we first calculate the showingCount based on the filtered products. Then, we check if the text value is empty. If it is, we set showingCount to the length of the original apidatacopy array. Otherwise, we set showingCount to the length of the filtered products. This ensures that showingCount is updated correctly even when the filter query is empty.
