@@ -7,9 +7,7 @@ import styled from 'styled-components';
 const ProductCards = ({card}) => {
   const dispatch=useDispatch();
   const {show}=useSelector(state=>state.filter);
-    console.log(card)
-  // console.log(prodetail.name)
-    // console.log(prodetail.map(card=>card.name))
+ 
   return (
     <>
    

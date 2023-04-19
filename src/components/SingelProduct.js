@@ -56,7 +56,7 @@ const SingelProduct = () => {
                        <p className="single-rating single-common">Rating: <span><Star/></span></p>
                        <p className="single-status single-common">Status: <span>{singleData.status}</span></p>
                        <p className="single-category single-common">Category: <span>{singleData.category?singleData.category.name:"none"}</span></p>
-                       {/* <p className="singlecategory single-common">Category: <span>{singleData.category.name}</span></p> */}
+                      
                        <h2 className="single-price single-common">$<span>{singleData.price}</span></h2>
                        <p className="single-description single-common">
                         {singleData.description}
@@ -113,7 +113,7 @@ const SingleProductWrapper=styled.section`
   .single-product{
       display: flex;
       flex-direction: column;
-      /* padding: 1rem; */
+      
   }
   .breadcrumb-container{
     padding: 5rem 3rem;
@@ -172,7 +172,6 @@ const SingleProductWrapper=styled.section`
   }
   .dec,.inc,.counter-input{
      padding: 0.7rem 1rem !important;
-     /* height: ; */
      height: 100%;
      color: ${({theme})=>theme.colors.firstcolor};
      background: ${({theme})=>theme.colors.fourthcolor};
@@ -191,7 +190,6 @@ const SingleProductWrapper=styled.section`
      color: ${({theme})=>theme.colors.fourthcolor};
      background: ${({theme})=>theme.colors.firstcolor};
      border: 1px solid ${({theme})=>theme.colors.firstcolor} !important;
-     /* border-color:${({theme})=>theme.colors.firstcolor} !important; */
      outline: none !important;
   }
   .social-share{
@@ -209,12 +207,9 @@ const SingleProductWrapper=styled.section`
   .social-link:hover{
     color: ${({theme})=>theme.colors.secondcolor};
   }
-  @media screen and (max-width: ${({theme})=>theme.media.desktop}) {
-    /* .add-to-cart{
-   
-    flex-wrap: wrap !important;
+  /* @media screen and (max-width: ${({theme})=>theme.media.desktop}) {
+    
   } */
-  }
   @media screen and (max-width: ${({theme})=>theme.media.tab}) {
    
     .breadcrumb-container{
@@ -235,10 +230,7 @@ const SingleProductWrapper=styled.section`
    .single-product-detail{
     padding: 0 1rem;
   }
-  /* .add-to-cart{
-    display: flex !important;
-    flex-wrap: wrap !important;
-  } */
+ 
   .add-to-cart-button{
     margin: 0.5rem;
   }
@@ -256,8 +248,7 @@ const SingleProductWrapper=styled.section`
       width: 100% !important;
       padding: 0 0;
       padding-top: 2rem;
-      /* height: 800px !important; */
-      /* background: rebeccapurple; */
+     
      }
     .img{
       width: 100%;
@@ -322,115 +313,6 @@ const SingleProductWrapper=styled.section`
    }
  
  }
-   /* .breadcrumb{
-     margin-bottom: 1rem;
-     text-transform: capitalize !important;
-   } */
-  /* .single-product{
-    
-    display: flex;
-    flex-direction: column;
-    
-  }
-  .slash,.bread-title{
-    color: red;
-  }
-  .singleproduct .breadcrumb{
-    padding: 1% 5%; 
-    text-transform: capitalize;
-  }
-
-  .singleproduct .single-container{
-    padding: 3% 5%;
-  }
-  .slideimg{
-    width: 100px;
-    height: 100px;
-
-  }
-  .slideimg img{
-    width: inherit;
-    height: inherit;
-  }
-  .singleproduct .single-container{
-    display: flex;
-    
-    width:100%;
-  }
-  .single-container .singleimg{
-     width: 550px;
-     height: 500px;
-  }
-  .single-container .singleimg img{
-       width: inherit;
-       height: inherit;
-  }
-  .singleproductdetail{
-    padding: 2% 3%;
-    width: 100%;
-    
-  }
-  .singleproductdetail .single-name{
-    font-size: 25p-x;
-  -  
- - }
-  .singleproductdetail .singleprice{
-  -  font-size:32px;
--  }
-  
-  .singleproductdetail .singlecommon{-
- -   margin: 1rem 0;
-  }
-   .addtocart{
-    display: flex;
-
-   }
-   .counter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    border: 1px solid rgb(221, 221, 221);
-    width: 120px;
-    height:46px;
-
-    
-   }
-   .counter-input{
-    width: 50px;
-    height:inherit;
-    border: 1px solid rgb(221, 221, 221);
-    border-left: none;
-    border-right: none;
-    font-size: 22px;
-    text-align: center;
-    outline: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
-   .inc,.dec{
-     width: 35px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     height: inherit;
-     background: white;
-     border: 1px solid rgb(221, 221, 221);
-    border-left: none;
-    border-right: none;
-   }
-   .addtocart-button{
-    margin:0 1rem;
-   }
-   .addtocart-button button{
-    width: 150px;
-    height: 46px;
-    background: #264653;
-    color: white;
-    border:none;
-    outline: none;
-   } */
 
 
 `;

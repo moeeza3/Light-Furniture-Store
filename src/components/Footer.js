@@ -52,27 +52,14 @@ const Footer = () => {
 
 const FooterWrapper=styled.div`
 
-/* body,h1,h2,h3,h4 {
-  margin: 0;
-  padding: 0;
-}
-
-h1,h2,h3,h4,p,a {
-  text-decoration: none;
-  color: black;
-  font-family: PT Sans, sans-serif;
-} */
 footer{
-    /* background: #bbb; */
     width: 100%;
     height: 45vh;
-    /* background: #bbb; */
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: -10px !important;
-    /* margin-top: 0px !important; */
-    /* background: #bbb; */
+   
 }
 a{
     text-decoration: none;
@@ -84,16 +71,11 @@ a{
     margin: 1rem 0 !important;
     display: flex !important;
     align-items: center !important;
-    /* margin-right: 1rem !important; */
 }
 .icon{
    font-size: 1.4rem;
 }
 
-/* .content {
-  
-  background: greenyellow !important;
-} */
 .nav-link{
      margin: 1rem 0 !important;
 }
@@ -103,8 +85,6 @@ a{
 }
 
 .footer-col {
-  /* display: inline-block; */
-  /* display: inline-block; */
   display: block !important;
   padding: 0.5em 0.1em 0.5em 1em;
   box-sizing: border-box;
