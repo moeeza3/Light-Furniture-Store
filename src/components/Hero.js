@@ -22,7 +22,7 @@ const Hero = () => {
           <Slider {...settings} className="slick">
             <div className="slider-item">
               <img
-                src="images/slide1.png"
+                src={process.env.PUBLIC_URL + "/images/slide1.png"}
                 className="img-fluid"
                 alt="Modern & Minimalistic"
               />
@@ -33,7 +33,7 @@ const Hero = () => {
             </div>
             <div className="slider-item">
               <img
-                src="images/slide2.png"
+                src={process.env.PUBLIC_URL + "/images/slide2.png"}
                 className="img-fluid"
                 alt="The Marble Concept"
               />
@@ -44,7 +44,7 @@ const Hero = () => {
             </div>
             <div className="slider-item">
               <img
-                src="images/slide3.png"
+                src={process.env.PUBLIC_URL + "/images/slide3.png"}
                 className="img-fluid"
                 alt="The Brighten Up Interior Collection"
               />

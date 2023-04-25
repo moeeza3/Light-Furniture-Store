@@ -12,7 +12,10 @@ const GridView = ({ gridview }) => {
       <GridWrapper>
         <div className="grid-view column">
           <div className="img-container">
-            <img src={gridview.images[0]} alt={gridview.name} />
+            <img
+              src={process.env.PUBLIC_URL + `/${gridview.images[0]}`}
+              alt={gridview.name}
+            />
             <div className="img-txt">
               <div
                 className="cart-icon icon"

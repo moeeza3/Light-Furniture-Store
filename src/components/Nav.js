@@ -1,12 +1,11 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
-import { GrFavorite, GrCart, GrClose } from "react-icons/gr";
+import { NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { opencloseMenu, opencloseCart } from "../store/slices/commonSlice";
 import { AiOutlineClose, AiOutlineShoppingCart } from "react-icons/ai";
 const Nav = () => {
   const dispatch = useDispatch();
-  const { activatemenu } = useSelector((state) => state.common);
+  // const { activatemenu } = useSelector((state) => state.common);
   const { totalCount } = useSelector((state) => state.cart);
   return (
     <>

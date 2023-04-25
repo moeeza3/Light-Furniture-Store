@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import ProductCards from "./ProductCards";
 import { useSelector, useDispatch } from "react-redux";
 import { sortNew } from "../store/slices/apiSlice";
 import NewArrProducts from "./NewArrProducts";
-import Slider from "react-slick";
+
 // import "~slick-carousel/slick/slick.css";
 // import "~slick-carousel/slick/slick-theme.css";
 const NewArrival = () => {

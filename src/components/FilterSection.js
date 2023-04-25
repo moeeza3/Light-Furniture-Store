@@ -1,18 +1,11 @@
-import React, { useEffect } from "react";
-import {
-  getInput,
-  updateFilterProducts,
-  clearfilters,
-} from "../store/slices/filterSlice";
+import React from "react";
+import { getInput, clearfilters } from "../store/slices/filterSlice";
 import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
 const FilterSection = () => {
   const dispatch = useDispatch();
   const {
-    filters: { text, categories, price, minPrice, maxPrice },
-    filterProducts,
-    filters,
-    show,
+    filters: { text, price, minPrice, maxPrice },
   } = useSelector((state) => state.filter);
   const { apidata } = useSelector((state) => state.api);
 
@@ -40,7 +33,7 @@ const FilterSection = () => {
       {}
     );
     let len = data.length;
-    console.log(len);
+
     return (sData = { All: len, ...sData });
   };
 
@@ -78,7 +71,7 @@ const FilterSection = () => {
                     >
                       {cur}{" "}
                       <span>
-                        {Object.keys(catlist).map((curEl) => curEl) != cur
+                        {Object.keys(catlist).map((curEl) => curEl) !== cur
                           ? catlist[cur]
                           : "null"}
                       </span>{" "}

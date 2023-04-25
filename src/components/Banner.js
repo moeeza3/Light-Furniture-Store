@@ -6,7 +6,14 @@ const Banner = () => {
   return (
     <>
       <BannerWrapper>
-        <div className="banner">
+        <div
+          className="banner"
+          style={{
+            backgroundImage: `url(${
+              process.env.PUBLIC_URL + "/images/banner_large.png"
+            })`,
+          }}
+        >
           <div className="container">
             <div className="banner-txt">
               <h1>Best Interior Collection</h1>
@@ -23,7 +30,7 @@ const Banner = () => {
 };
 const BannerWrapper = styled.div`
   .banner {
-    background: url("./images/banner_large.png");
+    /* background: url("/images/slide1.png"); */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
-import { CiLocationOn } from "react-icons/ci";
 import { GrLocation } from "react-icons/gr";
 
 import Footer from "../components/Footer";

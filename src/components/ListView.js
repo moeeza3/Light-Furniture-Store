@@ -11,7 +11,10 @@ const ListView = ({ list }) => {
       <ListWrapper>
         <div className="list">
           <div className="img-container">
-            <img src={list.images[0]} alt={list.name} />
+            <img
+              src={process.env.PUBLIC_URL + `/${list.images[0]}`}
+              alt={list.name}
+            />
           </div>
           <div className="list-body">
             <div className="list-detail">

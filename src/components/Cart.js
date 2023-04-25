@@ -6,9 +6,9 @@ import { AiOutlineClose } from "react-icons/ai";
 import Product from "./Product";
 const Cart = () => {
   const dispatch = useDispatch();
-  const { activatemenu, cartstatus } = useSelector((state) => state.common);
+  const { cartstatus } = useSelector((state) => state.common);
 
-  const { cart, totalcount, total } = useSelector((state) => state.cart);
+  const { cart, total } = useSelector((state) => state.cart);
   return (
     <>
       <CartWrapper>

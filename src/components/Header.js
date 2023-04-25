@@ -197,7 +197,7 @@ const HeaderWraper = styled.header`
     }
 
     .hidemenu .nav {
-      position: absolute;
+      position: fixed;
       top: 0;
       right: 0;
       z-index: 10;

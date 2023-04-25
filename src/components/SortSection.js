@@ -10,8 +10,9 @@ import {
 } from "../store/slices/filterSlice";
 const SortSection = () => {
   const dispatch = useDispatch();
-  const { sorting_value, grid, filterProducts, showingCount, filters, show } =
-    useSelector((state) => state.filter);
+  const { sorting_value, filterProducts, showingCount } = useSelector(
+    (state) => state.filter
+  );
 
   useEffect(() => {
     dispatch(sortproducts());
