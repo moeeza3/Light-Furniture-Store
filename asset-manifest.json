@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Light-Furniture-Store/static/css/main.6d4fccf9.css",
-    "main.js": "/Light-Furniture-Store/static/js/main.43caa5d3.js",
+    "main.js": "/Light-Furniture-Store/static/js/main.b67645e1.js",
     "static/js/787.6631ca78.chunk.js": "/Light-Furniture-Store/static/js/787.6631ca78.chunk.js",
     "static/media/slick.svg": "/Light-Furniture-Store/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/Light-Furniture-Store/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,11 +9,11 @@
     "static/media/slick.woff": "/Light-Furniture-Store/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Light-Furniture-Store/index.html",
     "main.6d4fccf9.css.map": "/Light-Furniture-Store/static/css/main.6d4fccf9.css.map",
-    "main.43caa5d3.js.map": "/Light-Furniture-Store/static/js/main.43caa5d3.js.map",
+    "main.b67645e1.js.map": "/Light-Furniture-Store/static/js/main.b67645e1.js.map",
     "787.6631ca78.chunk.js.map": "/Light-Furniture-Store/static/js/787.6631ca78.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6d4fccf9.css",
-    "static/js/main.43caa5d3.js"
+    "static/js/main.b67645e1.js"
   ]
 }
