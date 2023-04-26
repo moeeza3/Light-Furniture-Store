@@ -1,7 +1,7 @@
 {
   "name": "furniturestore",
   "version": "0.1.0",
-  "homepage": "https://moeeza3.github.io/Light-Furniture-Store/",
+  "homepage": "https://moeeza3.github.io/Light-Furniture-Store/#",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
